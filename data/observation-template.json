@@ -1,0 +1,30 @@
+{
+  "observation_date": null,
+  "published_at": null,
+  "usage_window": {
+    "start": null,
+    "end": null
+  },
+  "coverage_note": "",
+  "sources": [
+    {
+      "kind": "price",
+      "label": "",
+      "url": ""
+    },
+    {
+      "kind": "usage",
+      "label": "",
+      "url": ""
+    }
+  ],
+  "constituents": [
+    {
+      "id": "",
+      "name": "",
+      "price_usd_per_million": null,
+      "usage_tokens": null
+    }
+  ],
+  "notes": ""
+}
