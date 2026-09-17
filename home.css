@@ -1,0 +1,256 @@
+/* Standard Basis — homepage narrative and the entry to CCBT in practice.
+   Additive styles only: calculator and time-explorer styles are unchanged. */
+
+/* Lead with the company / unit distinction, not an undifferentiated product. */
+.home-hero .hero-grid{gap:70px;padding-block:61px 55px}
+.home-hero h1{font-size:clamp(64px,7vw,100px);margin-bottom:25px}
+.home-hero .lede{font-size:19px;max-width:640px;line-height:1.62}
+.home-hero .hero-focus{max-width:600px}
+.home-role-aside{padding-top:17px;align-self:stretch;margin-top:9px}
+.home-role-aside>.micro-label{color:var(--signal);margin-bottom:10px}
+.hero-role{display:block;text-decoration:none;padding:19px 0 21px;border-bottom:1px solid var(--line)}
+.hero-role>.micro-label{font-size:9px;margin-bottom:6px}
+.hero-role strong{font-family:var(--serif);font-size:28px;font-weight:400;letter-spacing:-.02em;line-height:1.25;display:flex;justify-content:space-between;align-items:center;gap:14px}
+.hero-role strong>span{font-family:var(--sans);font-size:17px;color:var(--signal)}
+.home-role-aside blockquote{font-size:23px;margin-top:23px;line-height:1.4;max-width:290px}
+.home-role-aside blockquote em{margin-top:7px}
+
+/* The problem: a short statement, three commercial questions, one distinction. */
+.home-problem{background:#fdfdfa}
+.home-problem,.home-concept,.home-financialization{padding-block:82px}
+.home-problem .section-heading{margin-bottom:35px}
+.problem-second{font-size:15px;line-height:1.8;margin-top:15px;max-width:735px;color:var(--ink)}
+.problem-questions{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid #adb9b7;border-bottom:1px solid var(--line)}
+.problem-questions article{padding:25px 28px 28px 0;min-width:0}
+.problem-questions article+article{border-left:1px solid var(--line);padding-left:28px}
+.problem-questions .micro-label{font-size:9px;color:var(--signal);margin-bottom:16px}
+.problem-questions h3{font-family:var(--serif);font-size:27px;line-height:1.22;font-weight:400;letter-spacing:-.025em;margin-bottom:13px}
+.problem-questions p{font-size:12px;line-height:1.85;max-width:330px}
+.access-distinction{margin-top:28px;display:grid;grid-template-columns:280px minmax(0,1fr);gap:34px;padding:27px 30px;background:var(--soft);border-left:2px solid var(--signal)}
+.access-distinction .micro-label{font-size:9px;color:var(--signal);margin-bottom:12px}
+.access-distinction h3{font-family:var(--serif);font-size:28px;font-weight:400;line-height:1.2;letter-spacing:-.02em}
+.access-distinction p{font-size:12px;line-height:1.85;max-width:760px}
+.access-distinction .access-takeaway{margin-top:12px;color:var(--ink);font-weight:600;font-size:12px}
+
+/* The concept: two roles and the index that connects them. */
+.home-concept .section-heading h2{font-size:clamp(38px,3.9vw,56px)}
+.concept-pair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.concept-card{padding:29px 34px 27px;background:var(--white);border:1px solid #b6c1bf;display:flex;flex-direction:column;min-width:0}
+.concept-card-top{display:flex;align-items:center;justify-content:space-between;gap:18px;margin-bottom:25px}
+.concept-card .micro-label{font-size:9px;color:var(--signal);max-width:370px}
+.concept-symbol{font-family:var(--serif);font-size:30px;line-height:1;color:var(--signal);flex:none}
+.concept-card h3{font-family:var(--serif);font-size:48px;font-weight:400;letter-spacing:-.035em;line-height:1.08;margin-bottom:9px}
+.concept-card .concept-full-name{font-size:12px;color:var(--ink);margin-bottom:23px;line-height:1.5}
+.concept-card>p:not(.concept-full-name){font-size:13px;line-height:1.85;margin-bottom:17px;max-width:510px}
+.concept-card>.text-link{margin-top:auto;padding-top:17px;border-top:1px solid var(--line);font-size:11px}
+.concept-company{background:var(--ink);border-color:var(--ink);color:var(--paper)}
+.concept-company .micro-label,.concept-company .concept-symbol{color:var(--signal-light)}
+.concept-company .concept-full-name{color:#e2e6e6}
+.concept-company>p:not(.concept-full-name){color:#bdc7cd}
+.concept-company>.text-link{color:var(--paper);border-color:#52616a}
+.concept-company a:hover{color:var(--signal-light)}
+.concept-company :focus-visible{outline-color:var(--signal-light)}
+.index-bridge{display:grid;grid-template-columns:310px minmax(0,1fr);gap:30px;padding:28px 31px;margin-top:23px;border:1px solid #b6c1bf;background:#eeeee7}
+.index-bridge .micro-label{font-size:9px;color:var(--signal);margin-bottom:13px}
+.index-bridge h3{font-family:var(--serif);font-size:28px;font-weight:400;line-height:1.2;letter-spacing:-.025em}
+.index-bridge p{font-size:12px;line-height:1.85;max-width:760px}
+.index-sequence{display:flex;align-items:center;gap:18px;margin-top:20px;line-height:1.5}
+.index-sequence span{font-family:var(--mono);font-size:10px;color:var(--ink)}
+.index-sequence b{font-weight:400;font-size:18px;color:var(--signal)}
+.home-concept .section-bottom>p{max-width:790px}
+
+/* Financialization: denomination, observable reference, and applications. */
+.home-financialization{background:#fdfdfa}
+.home-financialization .section-heading{margin-bottom:33px}
+.financialization-explainer{font-size:15px;line-height:1.85;max-width:735px;margin-top:14px;color:var(--ink)}
+.denomination-readings{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));border-top:1px solid #aeb9b7;margin-bottom:25px}
+.denomination-readings>div{display:flex;flex-wrap:wrap;align-items:center;gap:13px 24px;padding:22px 24px 22px 0}
+.denomination-readings>div+div{padding-left:28px;border-left:1px solid var(--line)}
+.reading-formula{font-family:var(--serif);font-size:24px;line-height:1.3;color:var(--signal);letter-spacing:-.02em;white-space:nowrap}
+.denomination-readings strong{display:block;font-size:11px;font-weight:600;line-height:1.6}
+.denomination-readings small{display:block;font-size:10px;color:var(--muted);line-height:1.7;margin-top:4px}
+.home-financialization .benchmark-panel-top{padding-block:18px}
+.home-financialization .benchmark-summary{padding-top:27px;padding-bottom:27px}
+.home-financialization .benchmark-pending{padding-top:27px;padding-bottom:27px}
+.home-financialization .pending-heading h4{font-size:31px}
+.home-financialization .compact-meta{margin-top:18px}
+.home-financialization .basis-construction{margin-top:20px}
+.practice-paths{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));margin-top:26px;border-top:1px solid #b6c1bf;border-bottom:1px solid #b6c1bf}
+.practice-paths>a{display:flex;flex-direction:column;text-decoration:none;padding:24px 27px 20px 0;min-width:0;transition:background .2s ease}
+.practice-paths>a+a{padding-left:27px;border-left:1px solid var(--line)}
+.practice-paths .micro-label{font-size:9px;color:var(--signal);margin-bottom:14px}
+.practice-paths strong{font-family:var(--serif);font-size:27px;font-weight:400;letter-spacing:-.025em;line-height:1.2;display:block;margin-bottom:13px;color:var(--ink)}
+.practice-description{font-size:12px;line-height:1.8;color:var(--muted);max-width:315px;display:block;margin-bottom:20px}
+.practice-action{display:flex;justify-content:space-between;align-items:center;font-size:11px;font-weight:600;gap:18px;margin-top:auto;color:var(--ink)}
+.practice-action b{font-size:17px;font-weight:400;color:var(--signal);transition:transform .18s ease}
+.practice-paths>a:hover .practice-action{color:var(--signal)}
+.practice-paths>a:hover .practice-action b{transform:translate(2px,-2px)}
+.practice-paths>a:hover strong{color:var(--signal)}
+.practice-note{font-size:10px;line-height:1.8;margin-top:13px}
+.financial-applications{display:grid;grid-template-columns:330px minmax(0,1fr);gap:32px;margin-top:38px;padding:25px 29px;background:var(--soft)}
+.financial-applications .micro-label{font-size:9px;color:var(--signal);margin-bottom:12px;max-width:300px}
+.financial-applications h3{font-family:var(--serif);font-size:28px;font-weight:400;letter-spacing:-.025em;line-height:1.2}
+.financial-application-list{display:grid;grid-template-columns:1fr 1fr;gap:0 28px;align-content:center}
+.financial-application-list span{font-size:12px;line-height:1.75;padding:11px 0;border-bottom:1px solid #cbd2cd;display:flex;align-items:center;gap:12px}
+.financial-application-list span::before{content:"";width:4px;height:4px;flex:none;background:var(--signal)}
+.applications-note{font-size:10px;line-height:1.8;margin-top:13px;max-width:1000px}
+.delivery-links{display:flex;flex-wrap:wrap;gap:15px 35px;margin-top:24px;padding-top:18px;border-top:1px solid #b8bfbf}
+.delivery-links .text-link{font-size:11px}
+
+/* The existing benchmark route now provides a more complete entry to the lab. */
+.lab-section-nav{border-bottom:1px solid var(--line);background:#eeeee7}
+.lab-section-nav>.shell{display:flex;flex-wrap:wrap;align-items:center;gap:4px 35px;padding-block:14px}
+.lab-section-nav a{display:inline-flex;align-items:center;gap:18px;min-height:36px;font-size:11px;font-weight:600;text-decoration:none}
+.lab-section-nav a>span{font-size:16px;color:var(--signal)}
+.lab-section-nav a:hover{color:var(--signal)}
+
+@media(min-width:1600px){.home-hero .hero-grid{padding-block:82px 78px}}
+@media(max-width:1150px){
+ .home-hero .hero-grid{gap:40px;grid-template-columns:minmax(0,1fr) 250px}
+ .home-hero .lede{font-size:18px}
+ .hero-role strong{font-size:26px}
+ .home-role-aside blockquote{font-size:21px}
+ .access-distinction{grid-template-columns:245px minmax(0,1fr);gap:28px}
+ .concept-card{padding:26px}
+ .concept-card h3{font-size:42px}
+ .index-bridge{grid-template-columns:255px minmax(0,1fr);gap:28px}
+ .index-sequence{gap:12px}
+ .financial-applications{grid-template-columns:270px minmax(0,1fr);gap:28px}
+ .financial-application-list{gap:0 20px}
+}
+@media(max-width:900px){
+ .home-hero .hero-grid{gap:34px;grid-template-columns:minmax(0,1fr) 220px;padding-block:57px}
+ .home-hero .lede{font-size:17px}
+ .hero-role strong{font-size:24px}
+ .home-role-aside blockquote{font-size:20px}
+ .problem-questions article{padding-right:20px}
+ .problem-questions article+article{padding-left:20px}
+ .problem-questions h3{font-size:24px}
+ .access-distinction{grid-template-columns:210px minmax(0,1fr);gap:24px;padding:23px}
+ .access-distinction h3{font-size:25px}
+ .concept-pair{gap:17px}
+ .concept-card{padding:24px}
+ .concept-card h3{font-size:38px}
+ .concept-card>p:not(.concept-full-name){font-size:12px}
+ .concept-card-top{gap:10px;align-items:start}
+ .concept-card-top .micro-label{font-size:8px;max-width:230px}
+ .index-bridge{grid-template-columns:205px minmax(0,1fr);padding:24px;gap:25px}
+ .index-bridge h3{font-size:25px}
+ .index-sequence{gap:10px;flex-wrap:wrap}
+ .denomination-readings>div{display:block;padding-block:18px}
+ .denomination-readings>div>span+span{display:block;margin-top:9px}
+ .reading-formula{font-size:23px}
+ .practice-paths>a{padding-right:20px}
+ .practice-paths>a+a{padding-left:20px}
+ .practice-paths strong{font-size:23px}
+ .financial-applications{grid-template-columns:225px minmax(0,1fr);padding:24px;gap:24px}
+ .financial-applications h3{font-size:25px}
+ .financial-application-list{gap:0 17px}
+ .financial-application-list span{font-size:11px}
+}
+@media(max-width:760px){
+ .home-hero .hero-grid{grid-template-columns:1fr;gap:31px;padding-block:43px 34px}
+ .home-hero h1{font-size:clamp(48px,12.4vw,72px)}
+ .home-hero .hero-focus{font-size:13px}
+ .home-hero .actions{display:grid;grid-template-columns:1fr 1fr;gap:12px;align-items:stretch}
+ .home-hero .actions .button{padding:12px;gap:12px;font-size:10px}
+ .home-problem,.home-concept,.home-financialization{padding-block:56px}
+ .home-role-aside{margin-top:0;padding-top:16px;display:grid;grid-template-columns:1fr 1fr;gap:0 23px;align-self:start}
+ .home-role-aside>.micro-label{grid-column:1/-1;margin-bottom:0}
+ .hero-role{padding-top:15px;padding-bottom:19px;min-width:0}
+ .hero-role>.micro-label{font-size:8px;letter-spacing:.07em;min-height:26px}
+ .hero-role strong{font-size:25px;gap:10px}
+ .home-role-aside blockquote{display:none}
+ .home-role-aside blockquote br{display:none}
+ .home-role-aside blockquote br::after{content:" "}
+ .home-role-aside blockquote em{display:inline;margin:0}
+ .home-concept .section-heading h2{font-size:clamp(33px,6.7vw,43px)}
+ .problem-second,.financialization-explainer{font-size:14px}
+ .problem-questions{grid-template-columns:1fr}
+ .problem-questions article{padding:22px 0;display:grid;grid-template-columns:1fr 1.12fr;column-gap:23px}
+ .problem-questions article+article{padding-left:0;border-left:0;border-top:1px solid var(--line)}
+ .problem-questions .micro-label{grid-column:1/-1;margin-bottom:13px}
+ .problem-questions h3{font-size:25px;margin:0}
+ .problem-questions p{font-size:12px;max-width:none}
+ .access-distinction{grid-template-columns:1fr;gap:16px;margin-top:24px;padding:23px}
+ .access-distinction h3{font-size:28px}
+ .access-distinction h3 br{display:none}
+ .access-distinction .micro-label{margin-bottom:10px}
+ .concept-pair{grid-template-columns:1fr;gap:19px}
+ .concept-card{padding:27px}
+ .concept-card-top{margin-bottom:21px;align-items:center}
+ .concept-card-top .micro-label{font-size:9px;max-width:250px}
+ .concept-card h3{font-size:43px}
+ .concept-card>p:not(.concept-full-name){font-size:13px}
+ .concept-card .concept-full-name{margin-bottom:19px}
+ .index-bridge{grid-template-columns:1fr;gap:17px;padding:25px;margin-top:19px}
+ .index-bridge .micro-label{margin-bottom:9px}
+ .index-bridge h3{font-size:28px}
+ .index-sequence{font-size:10px;gap:8px;margin-top:17px}
+ .index-sequence span{font-size:9px}
+ .home-concept .section-bottom>p{font-size:12px}
+ .denomination-readings{grid-template-columns:1fr;margin-bottom:23px}
+ .denomination-readings>div{display:flex;flex-wrap:wrap;gap:13px 23px;padding:20px 0}
+ .denomination-readings>div+div{padding-left:0;border-left:0;border-top:1px solid var(--line)}
+ .denomination-readings>div>span+span{margin-top:0}
+ .home-financialization .benchmark-pending{padding:26px 22px}
+ .home-financialization .pending-heading h4{font-size:28px}
+ .practice-paths{grid-template-columns:1fr;margin-top:24px}
+ .practice-paths>a{padding:23px 0;display:grid;grid-template-columns:1fr 1fr;column-gap:23px}
+ .practice-paths>a+a{border-left:0;border-top:1px solid var(--line);padding-left:0}
+ .practice-paths .micro-label{grid-column:1/-1}
+ .practice-paths strong{font-size:26px;margin-bottom:14px}
+ .practice-description{font-size:12px;margin-bottom:14px;max-width:none}
+ .practice-action{grid-column:1/-1;border-top:1px solid var(--line);padding-top:11px}
+ .financial-applications{grid-template-columns:1fr;gap:18px;padding:24px;margin-top:28px}
+ .financial-applications .micro-label{max-width:none}
+ .financial-applications h3{font-size:28px}
+ .financial-application-list span{font-size:12px;line-height:1.6}
+ .applications-note{font-size:10px}
+ .delivery-links{display:grid;grid-template-columns:1fr;gap:4px}
+ .delivery-links .text-link{justify-content:space-between;min-height:43px}
+ .lab-section-nav>.shell{gap:0 23px;padding-block:10px}
+ .lab-section-nav a{min-height:42px;font-size:10px;gap:13px}
+}
+@media(max-width:480px){
+ .home-role-aside{column-gap:19px}
+ .hero-role strong{font-size:23px;display:block}
+ .hero-role strong>span{margin-left:6px;font-size:14px}
+ .home-role-aside blockquote{font-size:19px}
+ .problem-questions article{display:block}
+ .problem-questions h3{font-size:27px;margin-bottom:12px}
+ .problem-questions h3 br{display:none}
+ .problem-questions p{font-size:12px}
+ .concept-card{padding:24px}
+ .concept-card h3{font-size:39px}
+ .concept-card-top .micro-label{font-size:8px}
+ .concept-symbol{font-size:28px}
+ .index-sequence{display:grid;grid-template-columns:1fr auto;gap:8px}
+ .index-sequence b{transform:rotate(90deg)}
+ .index-sequence span{font-size:10px;min-height:26px;display:flex;align-items:center}
+ .practice-paths>a{display:block}
+ .practice-paths strong{font-size:28px}
+ .practice-description{margin-bottom:20px}
+ .practice-action{padding-top:13px}
+ .financial-application-list{grid-template-columns:1fr}
+ .financial-application-list span{padding-block:12px}
+ .denomination-readings .reading-formula{font-size:25px}
+ .access-distinction{padding:22px}
+ .lab-section-nav>.shell{display:grid;grid-template-columns:1fr 1fr;gap:0 17px}
+}
+@media(max-width:360px){
+ .hero-role strong{font-size:21px}
+ .hero-role>.micro-label{font-size:7.5px;letter-spacing:.045em}
+ .concept-card{padding:21px}
+ .concept-card h3{font-size:36px}
+ .concept-full-name{font-size:11px!important}
+ .concept-card-top .micro-label{letter-spacing:.07em}
+ .home-financialization .pending-heading h4{font-size:26px}
+ .financial-applications{padding:22px}
+}
+@media(prefers-reduced-motion:reduce){.practice-paths>a,.practice-action b{transition:none}}
+@media print{
+ .home-problem,.home-concept,.home-financialization{break-inside:auto}
+ .concept-card,.problem-questions article,.index-bridge,.access-distinction,.practice-paths>a{break-inside:avoid}
+ .concept-company{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+}

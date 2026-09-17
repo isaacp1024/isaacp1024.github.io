@@ -1,0 +1,331 @@
+/* Standard Basis — narrative, common-token model, and dedicated research destination.
+   Loaded after the existing styles; calculation and time-explorer layouts are unchanged. */
+
+/* A broad entry point; names and roles are introduced in Our Proposal. */
+.narrative-hero .hero-grid{padding-block:58px 54px;gap:65px}
+.narrative-hero .hero-focus{font-size:15px;color:var(--ink);max-width:610px}
+.narrative-aside{align-self:stretch;margin-top:8px;padding-top:17px}
+.narrative-aside>a{display:grid;grid-template-columns:20px minmax(0,1fr) 15px;gap:12px;align-items:center;padding:19px 0;border-bottom:1px solid var(--line);text-decoration:none}
+.narrative-aside>a>span:first-child{font-family:var(--mono);font-size:9px;color:var(--signal)}
+.narrative-aside>a>span:last-child{font-size:17px;color:var(--signal)}
+.narrative-aside>a>strong{font-size:13px;font-weight:550;line-height:1.45}
+.narrative-aside blockquote{font-size:24px;line-height:1.35;margin-top:26px;max-width:285px}
+.narrative-aside blockquote em{display:inline;margin:0}
+.narrative-aside>.micro-label{color:var(--signal);margin-bottom:2px}
+.narrative-problem .section-heading{margin-bottom:31px}
+.narrative-problem .section-heading h2{font-size:clamp(38px,4.1vw,58px)}
+.narrative-problem .problem-second{font-size:14px;line-height:1.82;margin-top:16px}
+
+/* Existing solutions, then the questions they do not give a common unit. */
+.solution-gap{border:1px solid #b6c1bf;background:var(--soft);margin-top:32px}
+.gap-heading{display:flex;justify-content:space-between;gap:30px;align-items:start;padding:24px 29px;border-bottom:1px solid #c6ceca}
+.gap-heading>.micro-label{color:var(--signal);margin-top:4px;font-size:9px;min-width:185px}
+.gap-heading h3{font-family:var(--serif);font-size:28px;font-weight:400;line-height:1.2;letter-spacing:-.023em;flex-basis:800px}
+.gap-options{display:grid;grid-template-columns:repeat(3,minmax(0,1fr))}
+.gap-options article{padding:25px 29px;min-width:0}
+.gap-options article+article{border-left:1px solid #c6ceca}
+.gap-options .micro-label{font-size:8px;color:var(--signal);margin-bottom:12px}
+.gap-options h4{font-size:17px;line-height:1.35;margin-bottom:13px;font-weight:550}
+.gap-options p{font-size:12px;line-height:1.85}
+.gap-takeaway{padding:16px 29px;border-top:1px solid #c6ceca;font-size:11px;color:var(--ink)}
+.question-frame{margin-top:30px}
+.question-frame>.micro-label{font-size:9px;color:var(--signal);margin-bottom:16px}
+.question-frame .problem-questions article{padding-top:22px;padding-bottom:25px}
+.question-frame .problem-questions h3{font-size:25px;line-height:1.23;margin:0}
+.question-frame .problem-questions .micro-label{font-size:8px;margin-bottom:12px}
+.question-answer{display:flex;justify-content:space-between;align-items:center;gap:28px;margin-top:20px}
+.question-answer p{color:var(--ink);font-size:13px}
+.question-answer .text-link{font-size:11px;flex:none}
+
+/* The standard in the abstract; the named proposal follows. */
+.universal-concept{background:var(--paper);padding-block:78px}
+.universal-concept h2{font-size:clamp(37px,4.1vw,57px)}
+.universal-concept .section-heading{margin-bottom:36px}
+.universal-concept .problem-second{font-size:14px}
+.universal-map{display:grid;grid-template-columns:1fr 42px 1.12fr 42px 1fr;align-items:stretch;border:1px solid #b6c1bf;background:white;padding:25px}
+.universal-map>div{padding:22px 23px;min-width:0}
+.universal-map .micro-label{color:var(--signal);font-size:9px;margin-bottom:20px}
+.universal-map h3{font-family:var(--serif);font-size:29px;font-weight:400;letter-spacing:-.025em;line-height:1.15;margin-bottom:13px}
+.universal-map p{font-size:12px;line-height:1.8}
+.generic-tokens{display:flex;gap:7px;margin:0 0 28px}
+.generic-tokens>span{width:39px;height:43px;display:grid;place-items:center;border:1px solid #bdc9c6;font-family:var(--serif);font-size:20px;color:var(--muted)}
+.generic-tokens>span:last-child{border-style:dashed}
+.universal-arrow{align-self:center;text-align:center;font-size:27px;color:var(--signal)}
+.universal-map .universal-unit{background:var(--ink);color:white;text-align:center;padding:22px 26px 28px}
+.universal-unit .micro-label{color:var(--signal-light);margin-bottom:11px}
+.universal-unit p{color:#c0c9cc}
+.universal-glyph{display:block;font-family:var(--serif);font-size:55px;color:var(--signal-light);line-height:1.1;margin:0 0 15px}
+.universal-map .universal-destination{padding-top:22px}
+.universal-destination h3{font-size:32px;margin-top:7px;margin-bottom:16px;line-height:1.17}
+.concept-capabilities{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));margin-top:28px;border-top:1px solid var(--line)}
+.concept-capabilities article{padding:22px 24px 0 0}
+.concept-capabilities article+article{padding-left:26px;border-left:1px solid var(--line)}
+.concept-capabilities h3{font-size:15px;font-weight:550;margin-bottom:11px}
+.concept-capabilities p{font-size:12px;line-height:1.85}
+.home-concept{background:#fdfdfa}
+
+/* What it is first: English inputs, a word equation, then formal mathematics. */
+.common-basis-section{background:var(--paper)}
+.common-basis-section .section-heading{margin-bottom:35px}
+.common-basis-section .financialization-explainer{font-size:14px}
+.core-math{border:1px solid #b6c1bf;background:white}
+.core-math-intro{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center;padding:30px 32px;border-bottom:1px solid var(--line)}
+.core-math-intro .micro-label{color:var(--signal);font-size:9px;margin-bottom:14px}
+.core-math-intro h3{font-family:var(--serif);font-size:33px;line-height:1.14;letter-spacing:-.025em;font-weight:400}
+.core-math-intro p{font-size:13px;line-height:1.85;max-width:590px}
+.core-math strong{font-weight:600;color:var(--ink)}
+.core-inputs{display:grid;grid-template-columns:1fr 1fr}
+.core-input{padding:26px 32px 27px;min-width:0}
+.core-input+.core-input{border-left:1px solid var(--line)}
+.core-input-heading{display:flex;align-items:center;justify-content:space-between;gap:15px;margin-bottom:13px}
+.core-input-heading .micro-label{font-size:8.5px;color:var(--signal)}
+.core-symbol{font-family:var(--serif);font-style:italic;font-size:32px;color:var(--signal);line-height:1}
+.core-input h4{font-family:var(--serif);font-weight:400;font-size:26px;line-height:1.18;letter-spacing:-.025em;margin-bottom:12px}
+.core-input p{font-size:12px;line-height:1.85;max-width:525px}
+.core-input-rule{font-family:var(--mono);font-size:9px;color:var(--muted);line-height:1.8;display:flex;align-items:center;flex-wrap:wrap;gap:5px 10px;border-top:1px solid var(--line);padding-top:13px;margin-top:19px}
+.core-input-rule>span[aria-hidden]{color:var(--signal);font-size:13px}
+.core-english-equation{padding:25px 32px;background:#f4f4ed;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.core-english-equation>.micro-label{font-size:9px;color:var(--signal);margin-bottom:20px}
+.core-english-equation>p{display:flex;align-items:center;justify-content:center;gap:22px;line-height:1.5;font-size:16px;color:var(--ink)}
+.core-english-equation>p>strong{font-family:var(--serif);font-size:30px;font-weight:400;letter-spacing:-.03em}
+.core-equals{font-family:var(--serif);color:var(--signal);font-weight:400;line-height:1;font-size:30px;flex:none}
+.core-word-fraction{display:inline-flex;flex-direction:column;text-align:center;min-width:0;font-size:13px}
+.core-word-fraction>span{padding:9px 15px;line-height:1.5}
+.core-word-fraction>span:first-child{border-bottom:1px solid #8f9d98}
+.core-word-fraction b{font-weight:550}
+.core-formal{padding:25px 32px 23px}
+.core-formal>.micro-label{font-size:9px;color:var(--signal);margin-bottom:24px}
+.core-equation{display:flex;justify-content:center;align-items:center;gap:22px;font-family:var(--serif);font-size:34px;line-height:1.2;padding:1px 0 14px;color:var(--ink)}
+.core-equation sub{font-size:.5em;vertical-align:-.25em;font-style:normal}
+.core-fraction{display:inline-flex;flex-direction:column;text-align:center;line-height:1.3;min-width:180px}
+.core-fraction>span{padding:6px 17px}
+.core-fraction>span:first-child{border-bottom:1px solid #8f9d98}
+.core-weighted-equal{display:flex;align-items:center;gap:22px;white-space:nowrap}
+.core-math-key{display:flex;justify-content:center;flex-wrap:wrap;gap:6px 28px;margin-top:17px;color:var(--muted);font-size:10px;line-height:1.8}
+.core-math-key b{font-family:var(--serif);font-style:italic;color:var(--signal);font-size:16px;font-weight:400}
+.core-math-foot{display:flex;align-items:center;justify-content:space-between;gap:34px;padding:19px 32px;border-top:1px solid var(--line)}
+.core-math-foot p{font-size:11px;line-height:1.8;max-width:845px}
+.core-math-foot strong{display:block;margin-bottom:3px}
+.core-math-foot .text-link{font-size:10px;flex:none}
+
+/* Why it is useful follows the construction, rather than preceding it. */
+.basis-use-intro{display:grid;grid-template-columns:1fr 1fr;gap:10px 38px;align-items:center;margin-top:39px;padding-top:25px;border-top:1px solid #aeb9b7}
+.basis-use-intro>.micro-label{grid-column:1/-1;color:var(--signal);font-size:9px;margin-bottom:6px}
+.basis-use-intro h3{font-family:var(--serif);font-size:31px;line-height:1.16;font-weight:400;letter-spacing:-.025em}
+.basis-use-intro p{font-size:13px;line-height:1.85;max-width:590px}
+.common-basis-section .denomination-readings{margin-top:23px;border-top:0;border-bottom:1px solid var(--line);margin-bottom:0}
+.common-basis-section .denomination-readings>div{padding-top:15px;padding-bottom:20px}
+.common-basis-section .denomination-readings small{font-size:11px}
+.value-distinction{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:38px;margin-top:27px}
+.value-distinction .micro-label{font-size:8px;color:var(--signal);margin-bottom:12px}
+.value-distinction h3{font-family:var(--serif);font-size:28px;line-height:1.2;font-weight:400;letter-spacing:-.025em}
+.value-distinction p{font-size:12px;line-height:1.85}
+.common-basis-section .financial-applications{margin-top:31px}
+.applied-section{padding-block:75px;background:#fdfdfa}
+.applied-section .section-heading{margin-bottom:24px}
+.applied-section .practice-paths{margin-top:24px}
+.applied-section .practice-note{margin-top:18px}
+.market-flexibility{border-top:1px solid #52616a;border-bottom:1px solid #52616a;display:grid;grid-template-columns:270px minmax(0,1fr);gap:32px;padding:22px 0;margin:-10px 0 28px}
+.market-flexibility>.micro-label{color:var(--signal-light);font-size:9px;max-width:255px}
+.market-flexibility p{font-size:13px;line-height:1.85;max-width:850px}
+.market-flexibility strong{color:var(--paper);font-weight:550}
+
+/* One fixed CCBT quantity, two changing market compositions. */
+.adaptive-future .section-heading{margin-bottom:33px}
+.adaptive-future .problem-second{font-size:14px;line-height:1.85}
+.future-balance-visual{border:1px solid #b6c1bf;background:white}
+.future-balance-heading{display:flex;justify-content:space-between;align-items:center;gap:22px;padding:18px 29px;border-bottom:1px solid var(--line)}
+.future-balance-heading>.micro-label{font-size:9px;color:var(--signal)}
+.future-balance-grid{display:grid}
+.future-market-grid{display:grid;grid-template-columns:1fr 220px 1fr}
+.future-market-grid>article{padding:32px 29px}
+.future-market-grid article>.micro-label{font-size:9px;color:var(--signal);margin-bottom:15px}
+.future-market-grid h3{font-family:var(--serif);font-size:30px;font-weight:400;line-height:1.2;letter-spacing:-.025em;margin-bottom:23px}
+.future-market-grid article p{font-size:12px;line-height:1.85;margin-top:20px}
+.future-market-grid article p strong{font-weight:600;color:var(--ink)}
+.future-market-bar{display:flex;height:30px;width:100%;overflow:hidden}
+.future-market-bar>span{display:block;flex:0 0 var(--share);background:var(--model-color);border-right:1px solid white}
+.future-market-legend{display:flex;flex-wrap:wrap;align-items:center;gap:6px 14px;margin-top:13px}
+.future-market-legend>span{display:inline-flex;align-items:center;gap:5px;font-family:var(--mono);font-size:9px;white-space:nowrap}
+.future-market-legend i{width:6px;height:6px;display:inline-block}
+.future-market-legend b{font-weight:400;color:var(--muted)}
+.future-balance{display:flex;flex-direction:column;align-items:center;justify-content:center;padding:28px 18px;text-align:center;background:var(--soft);border-left:1px solid var(--line);border-right:1px solid var(--line)}
+.future-balance>.micro-label{font-size:8px;color:var(--signal);margin-bottom:15px}
+.future-balance>strong{font-family:var(--serif);font-size:63px;line-height:1.05;font-weight:400;letter-spacing:-.04em}
+.future-unit{font-family:var(--mono);font-size:13px;letter-spacing:.15em;margin-top:4px}
+.future-transfer{font-family:var(--serif);font-size:29px;color:var(--signal);line-height:1;margin:11px 0}
+.future-balance>p{font-size:11px;line-height:1.75}
+.future-balance-bottom{padding:22px 29px;border-top:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:30px}
+.future-balance-bottom p{font-size:11px;line-height:1.85;max-width:850px}
+.future-balance-bottom p strong{font-weight:550;color:var(--ink)}
+.future-balance-bottom .text-link{font-size:11px;flex:none}
+.future-explanation{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:29px}
+.future-explanation h3{font-size:16px;margin-bottom:11px}
+.future-explanation p{font-size:12px;line-height:1.85;max-width:540px}
+.adaptive-future .section-bottom>.fine-print{font-size:10px;line-height:1.8}
+.delivery-market-principle{background:var(--soft);border-left:2px solid var(--signal);padding:27px 30px;margin-bottom:31px;display:grid;grid-template-columns:1fr 1.4fr;gap:13px 40px}
+.delivery-market-principle>.micro-label{grid-column:1/-1;color:var(--signal);font-size:9px}
+.delivery-market-principle h3{font-family:var(--serif);font-size:30px;font-weight:400;letter-spacing:-.025em;line-height:1.2}
+.delivery-market-principle>p{font-size:13px;line-height:1.85}
+
+/* Practice shows the model; Research alone contains market publication states. */
+.core-practice{padding-block:57px 61px}
+.core-practice .section-heading{margin-bottom:34px}
+.practice-research-link{margin-top:21px;font-size:11px;line-height:1.8}
+.practice-research-link a{font-weight:550;color:var(--ink)}
+.research-reference{padding-block:48px 55px}
+.research-empty{padding:37px 33px 39px;display:grid;grid-template-columns:1fr 1fr;gap:55px}
+.research-empty .pending-heading>.micro-label{font-size:9px;color:var(--signal);margin-bottom:14px}
+.research-empty h4{font-family:var(--serif);font-weight:400;font-size:38px;line-height:1.14;letter-spacing:-.03em;margin-bottom:17px}
+.research-empty .reference-status{font-size:13px;line-height:1.85;max-width:540px;margin:0}
+.research-empty .text-link{margin-top:19px}
+.research-empty-list{border-top:1px solid #abb7b3}
+.research-empty-list>div{display:grid;grid-template-columns:28px 1fr;gap:15px;padding:19px 0;border-bottom:1px solid var(--line)}
+.research-empty-list>div>span{font-family:var(--mono);color:var(--signal);font-size:10px;margin-top:2px}
+.research-empty-list p{font-size:12px;line-height:1.85}
+.research-empty-list strong{display:block;font-size:14px;font-weight:550;color:var(--ink);margin-bottom:3px}
+.research-specification{max-width:900px;margin-left:auto}
+.research-specification .notice{font-size:13px;line-height:1.8}
+.research-specification .specification-list{font-size:12px}
+
+@media(min-width:761px) and (max-width:1050px){
+ .nav-links{gap:16px;font-size:10px}
+ .nav-participate{padding:7px 10px;gap:11px;margin-left:0}
+ .nav{gap:20px}
+}
+@media(max-width:1050px){
+ .narrative-hero .hero-grid{gap:38px}
+ .gap-heading{gap:22px}.gap-heading>.micro-label{min-width:165px}
+ .gap-options article{padding-inline:22px}
+ .question-frame .problem-questions h3{font-size:23px}
+ .universal-map{padding:16px;grid-template-columns:1fr 27px 1.08fr 27px 1fr}
+ .universal-map>div{padding-inline:17px}.universal-map .universal-unit{padding-inline:18px}
+ .universal-map h3{font-size:25px}.universal-destination h3{font-size:28px}.universal-map p{font-size:11px}
+ .generic-tokens{gap:5px}.generic-tokens>span{width:32px;height:36px;font-size:17px}
+ .core-math-intro{gap:28px;padding-inline:27px}.core-math-intro h3{font-size:30px}
+ .core-input{padding-inline:27px}.core-input-heading .micro-label{font-size:8px}
+ .core-input-rule{font-size:8px;gap:4px 7px}
+ .core-math-foot{padding-inline:27px;gap:25px}
+ .future-market-grid{grid-template-columns:1fr 178px 1fr}
+ .future-market-grid>article{padding:27px 23px}
+ .future-market-grid h3{font-size:26px}.future-balance>strong{font-size:55px}
+ .future-market-legend{font-size:8px;gap:6px 10px}
+ .future-balance-bottom{gap:25px}
+ .market-flexibility{grid-template-columns:230px minmax(0,1fr);gap:28px}
+}
+@media(max-width:760px){
+ .narrative-hero .hero-grid{padding-block:37px 31px;gap:26px}
+ .narrative-hero .hero-focus{font-size:13px;max-width:none}
+ .narrative-aside{display:block;margin:0;padding-top:15px;align-self:start}
+ .narrative-aside>a{display:grid;grid-template-columns:21px minmax(0,1fr) 18px;gap:12px;padding:12px 0}
+ .narrative-aside>a>strong{font-size:12px}.narrative-aside blockquote{display:none}
+ .narrative-aside>.micro-label{margin-bottom:5px}
+ .narrative-problem,.universal-concept,.common-basis-section,.applied-section{padding-block:55px}
+ .narrative-problem .section-heading h2,.universal-concept h2{font-size:clamp(34px,6.8vw,45px)}
+ .narrative-problem .problem-second,.universal-concept .problem-second,.common-basis-section .financialization-explainer{font-size:13px}
+ .gap-heading{display:block;padding:23px}
+ .gap-heading>.micro-label{margin-bottom:11px;font-size:8px}
+ .gap-heading h3{font-size:27px}.gap-heading h3 br{display:none}
+ .gap-options{grid-template-columns:1fr}.gap-options article{padding:22px 23px}
+ .gap-options article+article{border-left:0;border-top:1px solid #c6ceca}
+ .gap-options article .micro-label{margin-bottom:8px}.gap-options h4{font-size:18px;margin-bottom:10px}.gap-options p{font-size:12px}
+ .gap-takeaway{padding:16px 23px;font-size:11px}
+ .question-frame{margin-top:29px}.question-frame>.micro-label{font-size:8px;max-width:500px}
+ .question-frame .problem-questions article{display:block;padding:20px 0}
+ .question-frame .problem-questions h3{font-size:27px;margin:0;max-width:580px}
+ .question-frame .problem-questions .micro-label{margin-bottom:11px}
+ .question-answer{display:block;margin-top:20px}.question-answer p{font-size:12px}.question-answer .text-link{margin-top:10px}
+ .universal-map{grid-template-columns:1fr;padding:0}
+ .universal-map>div,.universal-map .universal-unit{padding:24px 25px}
+ .universal-map .micro-label{margin-bottom:15px}
+ .universal-map .universal-unit .micro-label{margin-bottom:11px}
+ .universal-map h3{font-size:29px}.universal-map p{font-size:12px}
+ .universal-map .universal-arrow{display:block;transform:rotate(90deg);line-height:1;justify-self:center;padding:0;position:relative;z-index:1;margin:0 0 -2px}
+ .universal-map .universal-source{padding-bottom:16px}
+ .generic-tokens{margin-bottom:20px}.generic-tokens>span{width:38px;height:40px;font-size:20px}
+ .universal-map .universal-unit{margin:12px 20px}
+ .universal-destination h3 br{display:none}.universal-destination h3{font-size:30px}
+ .concept-capabilities{grid-template-columns:1fr;margin-top:23px}
+ .concept-capabilities article{padding:21px 0}
+ .concept-capabilities article+article{padding-left:0;border-left:0;border-top:1px solid var(--line)}
+ .concept-capabilities h3{font-size:16px}
+ .core-math-intro{grid-template-columns:1fr;gap:18px;padding:25px 23px}
+ .core-math-intro h3{font-size:30px}.core-math-intro h3 br{display:none}
+ .core-math-intro p{font-size:12px}.core-math-intro .micro-label{font-size:8px;margin-bottom:12px}
+ .core-inputs{grid-template-columns:1fr}
+ .core-input{padding:23px}
+ .core-input+.core-input{border-left:0;border-top:1px solid var(--line)}
+ .core-input h4{font-size:26px}
+ .core-input-heading .micro-label{font-size:8px;max-width:240px}
+ .core-input-rule{font-size:9px;margin-top:16px}
+ .core-english-equation{padding:22px}
+ .core-english-equation>p{flex-wrap:wrap;gap:8px 13px;justify-content:center}
+ .core-english-equation>p>strong{font-size:29px}
+ .core-word-fraction{flex-basis:100%;font-size:12px;margin-top:8px}
+ .core-word-fraction>span{padding:10px 0}
+ .core-formal{padding:23px 19px}
+ .core-formal>.micro-label{font-size:8px;margin-bottom:21px}
+ .core-equation{font-size:28px;gap:15px;flex-wrap:wrap;padding-bottom:7px}
+ .core-equation>.core-equals{font-size:27px}
+ .core-fraction{min-width:130px}.core-fraction>span{padding:5px 12px}
+ .core-weighted-equal{gap:14px;justify-content:center;flex-basis:100%;margin-top:9px}
+ .core-math-key{display:block;margin-top:18px;font-size:10px}
+ .core-math-key>span{display:block;line-height:1.8;margin-top:7px}
+ .core-math-foot{display:block;padding:20px 23px}
+ .core-math-foot p{font-size:11px}.core-math-foot .text-link{margin-top:11px}
+ .basis-use-intro{grid-template-columns:1fr;gap:16px;margin-top:31px;padding-top:24px}
+ .basis-use-intro>.micro-label{margin-bottom:0;font-size:8px}.basis-use-intro h3{font-size:30px}.basis-use-intro p{font-size:12px}
+ .value-distinction{grid-template-columns:1fr;gap:17px;margin-top:24px}
+ .value-distinction h3{font-size:28px}.value-distinction .micro-label{font-size:8px}
+ .common-basis-section .denomination-readings{margin-top:19px}
+ .common-basis-section .denomination-readings>div{padding:19px 0}
+ .market-flexibility{grid-template-columns:1fr;gap:12px;padding:21px 0;margin-top:0}
+ .market-flexibility>.micro-label{max-width:none;font-size:8px}.market-flexibility p{font-size:12px}
+ .adaptive-future .problem-second{font-size:13px}
+ .future-balance-heading{padding:18px 23px;display:block}
+ .future-balance-heading>.micro-label{font-size:8px}
+ .future-balance-heading .badge{margin-top:13px}
+ .future-market-grid{grid-template-columns:1fr}
+ .future-market-grid>article{padding:25px 23px}
+ .future-market-grid h3{font-size:29px;margin-bottom:20px}
+ .future-market-legend{gap:7px 16px}.future-market-legend>span{font-size:10px}
+ .future-market-grid article p{font-size:12px;margin-top:18px}
+ .future-balance{padding:25px 23px;border-inline:0;border-block:1px solid var(--line)}
+ .future-balance>.micro-label{margin-bottom:10px}.future-balance>strong{font-size:65px}
+ .future-transfer{transform:rotate(90deg);margin:13px 0}
+ .future-balance-bottom{padding:23px;display:block}
+ .future-balance-bottom .text-link{margin-top:13px}
+ .future-explanation{grid-template-columns:1fr;gap:21px;margin-top:25px}
+ .future-explanation h3{font-size:16px}
+ .delivery-market-principle{grid-template-columns:1fr;gap:16px;padding:24px}
+ .delivery-market-principle h3{font-size:29px}.delivery-market-principle>p{font-size:12px}
+ .core-practice{padding-block:40px 47px}.core-practice .section-heading{margin-bottom:26px}
+ .research-reference{padding-block:32px 42px}
+ .research-empty{padding:27px 23px;grid-template-columns:1fr;gap:26px}
+ .research-empty h4{font-size:32px}.research-empty .reference-status{font-size:12px}
+ .research-empty-list>div{padding-block:17px}
+ .research-specification .notice{font-size:12px}
+}
+@media(max-width:400px){
+ .narrative-hero .hero-grid{padding-top:32px}.narrative-hero .hero-focus{font-size:12px}
+ .narrative-problem .section-heading h2,.universal-concept h2{font-size:35px}
+ .gap-heading,.gap-options article{padding-inline:21px}
+ .gap-heading h3{font-size:26px}.gap-takeaway{padding-inline:21px}
+ .core-input,.core-math-intro,.core-math-foot{padding-inline:21px}
+ .core-equation{font-size:25px;gap:11px}
+ .core-equation>.core-equals{font-size:24px}
+ .core-fraction{min-width:116px}.core-fraction>span{padding-inline:10px}
+ .core-formal{padding-inline:17px}
+ .core-input-rule{font-size:8px}
+ .core-english-equation{padding-inline:20px}
+ .core-english-equation>.micro-label{font-size:8px}
+ .core-word-fraction{font-size:11px}
+ .core-math-intro h3{font-size:28px}
+ .question-frame .problem-questions h3{font-size:26px}
+ .future-market-grid h3{font-size:27px}
+}
+@media print{
+ .solution-gap,.core-math,.future-balance-visual,.universal-map{break-inside:avoid}
+ .universal-unit{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+ .future-market-bar{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+}

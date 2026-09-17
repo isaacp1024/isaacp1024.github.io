@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="Understand CCBT through its core mathematical model, a worked calculation, a fictional three-year market, and a model-token allocation tool. Market data is published separately in Research." name="description"/>
+<meta content="#101820" name="theme-color"/>
+<meta content="website" property="og:type"/>
+<meta content="CCBT in Practice — Standard Basis" property="og:title"/>
+<meta content="Understand CCBT through its core mathematical model, a worked calculation, a fictional three-year market, and a model-token allocation tool. Market data is published separately in Research." property="og:description"/>
+<title>CCBT in Practice — Standard Basis</title>
+<link href="favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="styles.css" rel="stylesheet"/>
+<link href="home.css" rel="stylesheet"/>
+<link href="time-explorer.css" rel="stylesheet"/>
+<script defer="" src="site-config.js"></script>
+<script defer="" src="site.js"></script>
+<script defer="" src="data/time-scenario.js"></script>
+<script defer="" src="time-explorer.js"></script>
+<link href="narrative.css" rel="stylesheet"/><link href="refinement.css" rel="stylesheet"/></head>
+<body class="sb-site" data-page="benchmark">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header"><nav aria-label="Main navigation" class="shell nav">
+<a class="brand" href="index.html"><span aria-hidden="true" class="brand-symbol"><i></i><i></i><i></i></span><span>Standard Basis</span></a>
+<button aria-controls="nav-links" aria-expanded="false" class="nav-toggle" hidden="" type="button">Menu <span aria-hidden="true">+</span></button>
+<div class="nav-links" id="nav-links"><a href="vision.html">Vision</a><a href="market.html">Market</a><a href="ccbt.html">CCBT</a><a aria-current="page" href="benchmark.html">In practice</a><a href="research.html">Research</a><a class="nav-participate" href="participate.html">Participate <span aria-hidden="true">↗</span></a></div>
+</nav></header>
+<main id="main">
+<header class="page-hero benchmark-hero"><div class="shell"><p class="eyebrow">The common denominator, in practice</p><h1>CCBT in Practice<span class="accent">.</span></h1><div class="page-hero-bottom"><p class="lede">From model prices to a common denomination.<br/> From a CCBT balance to model consumption.</p><a class="text-link jump-link" href="ccbt.html#methodology">Read the general methodology <span aria-hidden="true">↗</span></a></div><p class="page-note">Understand the model. Construct the basis. Follow it through time. Choose an allocation.</p></div></header>
+<nav aria-label="CCBT demonstrations" class="lab-section-nav"><div class="shell"><a class="jump-link" href="#core-model">The core model<span aria-hidden="true">↗</span></a><a class="jump-link" href="#example">Build the basis <span aria-hidden="true">↗</span></a><a class="jump-link" href="#through-time">Through time <span aria-hidden="true">↗</span></a><a class="jump-link" href="#allocate">Allocate CCBT <span aria-hidden="true">↗</span></a></div></nav>
+<section class="section core-practice" id="core-model"><div class="shell"><div class="section-heading"><p class="section-label"><span>00</span> / The core model</p><div><h2>Market Usage.<br/> Market Prices. One Basis.</h2><p class="section-intro">First understand what the common token represents. Then change the inputs, follow the market through time, and allocate a balance.</p></div></div><div aria-labelledby="practice-math-title" class="core-math">
+<div class="core-math-intro"><div><span class="micro-label">The model, in plain English</span><h3 id="practice-math-title">The price of the tokens<br/> the market actually consumes.</h3></div><p>Give each model’s token price a weight equal to its share of <strong>aggregate market token usage</strong>. Add those weighted prices. The result is the price of one common token for that market and period.</p></div>
+<div class="core-inputs">
+<div class="core-input"><div class="core-input-heading"><span class="micro-label">Input 01 / The market’s consumption</span><span aria-hidden="true" class="core-symbol">q</span></div><h4>Aggregate market usage.</h4><p>How many qualifying tokens of each model the <strong>whole defined market</strong> consumes—not one buyer’s usage or preferred basket.</p><div class="core-input-rule"><span>Model’s market tokens</span><span aria-hidden="true">÷</span><span>All market tokens</span><span aria-hidden="true">=</span><strong>Usage share</strong></div></div>
+<div class="core-input"><div class="core-input-heading"><span class="micro-label">Input 02 / The market’s prices</span><span aria-hidden="true" class="core-symbol">p</span></div><h4>Open-market token prices.</h4><p>What a token from each qualifying model costs in the market, expressed on a consistent pricing basis—not the cost of a particular GPU or a score for model quality.</p><div class="core-input-rule"><span>Model token</span><span aria-hidden="true">→</span><strong>Observable standardized price</strong></div></div>
+</div>
+<div class="core-english-equation"><span class="micro-label">Put the two together</span><p><strong>CCBT price</strong><span aria-hidden="true" class="core-equals">=</span><span class="core-word-fraction"><span>Sum of <b>(model price × market token usage)</b></span><span>Total qualifying market tokens consumed</span></span></p></div>
+<div class="core-formal"><span class="micro-label">The same idea, in mathematics</span><div aria-label="The CCBT price at time t equals the sum of each model price times its market token usage, divided by total market token usage. Equivalently, the sum of usage weight times model price." class="core-equation" role="math"><span>P<sub>CCBT,t</sub></span><span class="core-equals">=</span><span class="core-fraction"><span>Σ<sub>i</sub> p<sub>i,t</sub> q<sub>i,t</sub></span><span>Σ<sub>i</sub> q<sub>i,t</sub></span></span><span class="core-weighted-equal"><span class="core-equals">=</span><span>Σ<sub>i</sub> w<sub>i,t</sub> p<sub>i,t</sub></span></span></div><div class="core-math-key"><span><b>p</b> = standardized price per model token</span><span><b>q</b> = model-token usage across the defined market</span><span><b>w</b> = q ÷ total market-token usage</span></div></div>
+<div class="core-math-foot"><p><strong>Market usage sets the weights. Your allocation comes later.</strong> A model serving 40% of qualifying market tokens carries 40% of the weight. The result is usage-weighted, not an equal average of available models.</p><a class="text-link jump-link" href="ccbt.html#methodology">Read the methodology <span aria-hidden="true">↗</span></a></div>
+</div><p class="practice-research-link" id="reference">Looking for dated market data? <a href="research.html#reference">Research publications and source records <span aria-hidden="true">↗</span></a></p></div></section>
+<section class="section" id="example"><div class="shell"><div class="section-heading"><p class="section-label"><span>01</span> / Understand the calculation</p><div><h2>One Basis.<br/> Different Model Economics.</h2><p class="section-intro">The usage inputs stand for aggregate token consumption across a fictional market—not your personal model allocation. Together with model-token prices, they construct its common reference.</p></div></div><div class="calculator calculator-flow" id="ccbt-calculator">
+<div class="calculator-header">
+<div><span class="micro-label">Methodology demonstration</span><h3>Change the inputs.<br/> See the common basis change.</h3></div>
+<span class="badge example-badge">Fictional inputs · Not market data</span>
+</div>
+<p class="calculator-disclaimer">All three models, prices, and usage quantities are fictional. This is a worked arithmetic example, not a benchmark observation or a proposed market weighting.</p>
+<noscript><p class="calculator-disclaimer">Enable JavaScript to edit the inputs and see the visual calculation. The default example is (0.80 × 50 + 2.00 × 34 + 5.00 × 15) ÷ 99 ≈ $1.8485 per million CCBT.</p></noscript>
+<div class="calculator-inputs">
+<div class="calc-model-inputs">
+<fieldset class="calc-input-card" data-model="0">
+<legend><i aria-hidden="true" class="model-key key-0"></i>Model A</legend>
+<div class="calc-fields">
+<label for="example-price-a">Price <span>USD / 1M tokens</span><input aria-describedby="calc-error price-step-hint" data-calc-price="0" disabled="" id="example-price-a" inputmode="decimal" max="1000000" min="0" step="0.10" type="number" value="0.80"/></label>
+<label for="example-usage-a">Usage <span>Million tokens</span><input aria-describedby="calc-error" data-calc-usage="0" disabled="" id="example-usage-a" inputmode="decimal" max="1000000000000" min="0" step="any" type="number" value="50"/></label>
+</div>
+</fieldset>
+<fieldset class="calc-input-card" data-model="1">
+<legend><i aria-hidden="true" class="model-key key-1"></i>Model B</legend>
+<div class="calc-fields">
+<label for="example-price-b">Price <span>USD / 1M tokens</span><input aria-describedby="calc-error price-step-hint" data-calc-price="1" disabled="" id="example-price-b" inputmode="decimal" max="1000000" min="0" step="0.10" type="number" value="2.00"/></label>
+<label for="example-usage-b">Usage <span>Million tokens</span><input aria-describedby="calc-error" data-calc-usage="1" disabled="" id="example-usage-b" inputmode="decimal" max="1000000000000" min="0" step="any" type="number" value="34"/></label>
+</div>
+</fieldset>
+<fieldset class="calc-input-card" data-model="2">
+<legend><i aria-hidden="true" class="model-key key-2"></i>Model C</legend>
+<div class="calc-fields">
+<label for="example-price-c">Price <span>USD / 1M tokens</span><input aria-describedby="calc-error price-step-hint" data-calc-price="2" disabled="" id="example-price-c" inputmode="decimal" max="1000000" min="0" step="0.10" type="number" value="5.00"/></label>
+<label for="example-usage-c">Usage <span>Million tokens</span><input aria-describedby="calc-error" data-calc-usage="2" disabled="" id="example-usage-c" inputmode="decimal" max="1000000000000" min="0" step="any" type="number" value="15"/></label>
+</div>
+</fieldset>
+</div>
+<div class="calc-input-bottom"><p>Weights follow each model’s share of total fictional market usage.<span class="price-step-hint" id="price-step-hint">Price arrows move in $0.10 increments per million tokens.</span></p><button class="text-button jump-link" disabled="" id="reset-example" type="button">Reset example <span aria-hidden="true">↺</span></button></div>
+<p class="form-error" hidden="" id="calc-error" role="alert"></p>
+</div>
+<div class="calculator-charts">
+<div><div class="chart-title"><h4>Relative model prices</h4><span>CCBT per model token</span></div><div id="calc-relative-chart"><p class="chart-note">Enable JavaScript to compare the example inputs interactively.</p></div></div>
+<div><div class="chart-title"><h4>Usage composition</h4><span>Share of fictional usage</span></div><div id="calc-composition-chart"></div></div>
+</div>
+<section aria-labelledby="weighting-heading" class="calc-weighting">
+<div class="weighting-heading"><div><span class="micro-label">Bring the two together</span><h4 id="weighting-heading">Price × usage share.</h4></div><p>Width is usage. Height is price.<br/><strong>Each colored area is a contribution.</strong></p></div>
+<div id="calc-weighted-visual"><p class="chart-note">The visual calculation appears when JavaScript is enabled.</p></div>
+</section>
+<div aria-atomic="true" aria-live="polite" class="calc-result calc-result-bottom">
+<div class="calc-final-quote"><span class="micro-label">Illustrative common reference</span><strong id="calc-value">$1.8485</strong><span class="calc-final-unit">USD / 1M CCBT · Fictional</span></div>
+<div class="calc-final-explanation"><span class="micro-label">One price. All three contributions.</span><p class="calc-sum" id="calc-sum">$0.4040 + $0.6869 + $0.7576</p><p class="calc-equation" id="calc-equation">(0.80 × 50 + 2.00 × 34 + 5.00 × 15) ÷ 99</p><p class="calc-result-note">An economic reference—not a measure of intelligence, output quality, or completed work.</p></div>
+</div>
+<div class="calculator-foot"><p>Change a price or usage quantity to follow its effect through the calculation.</p><button class="text-button jump-link" disabled="" id="export-example" type="button">Export example CSV <span aria-hidden="true">↓</span></button></div>
+</div></div></section>
+<!-- BEGIN TIME EXPLORERS -->
+<section class="section time-section" id="through-time">
+<div class="shell">
+<div class="time-panel" id="ccbt-time-explorer">
+<header class="time-header">
+<div><span class="micro-label">02 / A common basis through time</span><h2>The models change.<br/> The market keeps a price.</h2><p>Follow one representative segment for three abstract years. Models arrive, gain usage, and fade. The common basis follows the market—not a permanent basket.</p></div>
+<span class="badge example-badge">Fictional scenario · Not market history</span>
+</header>
+<noscript><p class="time-static-note">Enable JavaScript to explore the scenario. It starts with Models A, B and C, and ends with C, D, E, F and G. All prices and usage weights are invented.</p></noscript>
+<div class="time-controls">
+<div class="time-segment"><span class="micro-label">Standard CCBT</span><strong>Representative segment</strong><span id="time-frequency-note">3 years · 12 quarter-end snapshots</span></div>
+<div aria-label="Time divisions" class="time-resolution" role="group"><button aria-pressed="true" data-time-resolution="quarter" type="button">Quarterly</button><button aria-pressed="false" data-time-resolution="month" type="button">Monthly</button></div>
+<button aria-pressed="false" class="time-play" id="time-play" type="button"><span aria-hidden="true">▶</span> Play the span</button>
+</div>
+<div class="time-scrubber">
+<div class="time-scrubber-label"><label for="time-cursor">Inspect a period</label><output for="time-cursor" id="time-period">Year 3 · Q4</output></div>
+<div class="time-range-wrap"><span>Year 1</span><input aria-describedby="time-scrub-help" id="time-cursor" max="11" min="0" step="1" type="range" value="11"/><span>Year 3</span></div>
+<p id="time-scrub-help">Drag the timeline or click a chart. All three views follow the same period.</p>
+</div>
+<div class="time-charts">
+<figure class="time-figure"><figcaption><div><span class="micro-label">01 / What the segment uses</span><h3>A changing usage mix.</h3></div><span>Share of qualifying tokens</span></figcaption><div class="time-chart time-light-chart" id="time-usage-chart"></div></figure>
+<figure class="time-figure"><figcaption><div><span class="micro-label">02 / What each model costs</span><h3>Different price paths.</h3></div><span>USD / 1M model tokens</span></figcaption><div class="time-chart time-light-chart" id="time-price-chart"></div></figure>
+</div>
+<div class="time-legend-area"><div aria-label="Highlight a model" class="time-model-legend" id="time-model-legend" role="group"></div><p>Percentages show usage at the selected period. Select a model to highlight it; the calculation does not change.</p></div>
+<div class="time-story">
+<button data-time-jump="2" type="button"><span class="micro-label">Opening market · Y1 Q1</span><strong>A · B · C</strong><span>Three models define the initial mix.</span></button>
+<button data-time-jump="14" type="button"><span class="micro-label">A new leader · Y2 Q1</span><strong>Model D reaches 40%</strong><span>Its influence grows with its usage.</span></button>
+<button data-time-jump="35" type="button"><span class="micro-label">Closing market · Y3 Q4</span><strong>C · D · E · F · G</strong><span>A and B have left; D is down to 1%.</span></button>
+</div>
+<div class="time-reduction">
+<div class="time-reduction-head"><div><span class="micro-label">03 / Bring the inputs together</span><h3>A new basket. The same rule.</h3></div><p>At each date: <strong>price × usage share → sum.</strong><br/> A usage-weighted mean, not the median model price.</p></div>
+<div class="time-equation-terms" id="time-equation-terms"></div>
+<div class="time-equation-total"><span>Contributions to the common price <span class="time-equation-unit">· USD / 1M CCBT</span></span><strong id="time-equation-total"></strong></div>
+</div>
+<div class="time-reference">
+<div class="time-reference-quote"><span class="micro-label">Standard CCBT · Representative segment</span><h3>One price<br/> through time.</h3><strong class="time-price-big" id="time-reference-price"></strong><span class="time-reference-unit">USD / 1M CCBT</span><span class="time-reference-date" id="time-reference-date"></span><p>The denomination continues.<br/> The models and the price change.</p></div>
+<div class="time-reference-plot"><div class="time-reference-plot-head"><span><i aria-hidden="true"></i>Usage-weighted CCBT price</span><span>Fictional series</span></div><div class="time-chart" id="time-reference-chart"></div><div class="time-reference-stats" id="time-reference-stats"></div></div>
+</div>
+<div class="time-panel-footer"><p>Composition and individual prices both move this reference. This scenario is independent of the editable three-model example.</p><button class="text-button jump-link" id="time-export" type="button">Export scenario CSV <span aria-hidden="true">↓</span></button></div>
+<details class="time-data-details"><summary>Inspect the selected snapshot and scenario rules</summary><p class="time-data-note">The quarterly view samples quarter-end months; it does not average each quarter. The monthly view uses 36 constructed snapshots. A model is available in this example only while its usage is positive. A and B leave; D remains eligible at 1%. Prices are standardized fictional token prices; total segment volume is not modeled.</p><div aria-label="Selected scenario data" class="time-table-scroll" role="region" tabindex="0"><table class="time-data-table"><caption id="time-table-caption">Selected period</caption><thead><tr><th scope="col">Model</th><th scope="col">USD / 1M tokens</th><th scope="col">Usage share</th><th scope="col">Contribution</th><th scope="col">CCBT / token</th></tr></thead><tbody id="time-data-body"></tbody></table></div></details>
+<p class="sr-only" id="time-announcement" role="status"></p>
+</div>
+</div>
+</section>
+<section class="section time-section allocation-section" id="allocate">
+<div class="shell">
+<div class="time-panel allocation-panel" id="ccbt-allocation">
+<header class="time-header"><div><span class="micro-label">03 / From denomination to consumption</span><h2>Choose the time.<br/> Then choose the models.</h2><p>The index basket sets the reference. Your allocation sets what you consume. Start with a CCBT quantity or a dollar budget, then explore the available model tokens.</p></div><span class="badge example-badge">Illustrative entitlement · Not a quote</span></header>
+<noscript><p class="time-static-note">Enable JavaScript to change dates, budget, and allocation. This is a hypothetical conversion calculator, not a purchase or a delivery offer.</p></noscript>
+<div class="allocation-controls">
+<div class="allocation-field"><label for="allocation-purchase">01 / Purchase reference date</label><select aria-describedby="allocation-purchase-help" id="allocation-purchase"></select><p id="allocation-purchase-help">Illustrative entry reference: <strong id="allocation-entry-price"></strong></p></div>
+<div class="allocation-field"><div class="allocation-amount-header"><label for="allocation-amount" id="allocation-amount-label">02 / Million CCBT</label><div aria-label="Amount entered as" class="allocation-mode" role="group"><button aria-pressed="true" data-allocation-mode="ccbt" type="button">CCBT</button><button aria-pressed="false" data-allocation-mode="usd" type="button">USD</button></div></div><div class="allocation-amount-wrap"><span aria-hidden="true" id="allocation-amount-prefix">M</span><input aria-describedby="allocation-amount-help allocation-error" id="allocation-amount" inputmode="decimal" max="1000000000000" min="0" step="any" type="number" value="100"/></div><p id="allocation-amount-help">Holds the CCBT quantity fixed as the purchase date changes.</p></div>
+<div class="allocation-field"><label for="allocation-consumption">03 / Consumption date</label><select id="allocation-consumption"></select><div class="allocation-date-meta"><p>Use the prices and models available then.</p><button class="text-button jump-link" id="allocation-use-cursor" type="button">Use explored period ↗</button></div></div>
+</div>
+<p class="form-error allocation-error" hidden="" id="allocation-error" role="alert"></p>
+<p class="allocation-date-notice" hidden="" id="allocation-date-notice" role="status"></p>
+<div class="allocation-ticket" id="allocation-ticket">
+<div><span class="micro-label">Illustrative initial outlay</span><strong id="allocation-initial-usd"></strong><span id="allocation-initial-date"></span></div>
+<span aria-hidden="true" class="allocation-ticket-arrow">→</span>
+<div><span class="micro-label">CCBT balance carried forward</span><strong id="allocation-ccbt-balance"></strong><span>Quantity held fixed between these dates</span></div>
+<span aria-hidden="true" class="allocation-ticket-arrow">→</span>
+<div><span class="micro-label">Consumption-date reference equivalent</span><strong id="allocation-equivalent"></strong><span id="allocation-equivalent-date"></span></div>
+</div>
+<div class="allocation-assumption"><span aria-hidden="true">↳</span><p><strong>Illustrative pricing rule:</strong> budget ÷ purchase-date reference = CCBT balance. That balance converts at the consumption-date reference. The later dollar equivalent is a calculation—not cash held or a promised payout. Actual forward pricing and delivery terms are not modeled.</p></div>
+<div class="allocation-basket-heading"><div><span class="micro-label">Your consumption basket</span><h3>The market’s weights are not your instructions.</h3><p id="allocation-available-label"></p></div><div aria-label="Allocation presets" class="allocation-presets" role="group"><button aria-pressed="true" data-allocation-preset="equal" type="button">Equal CCBT</button><button aria-pressed="false" data-allocation-preset="market" type="button">Market token mix</button></div></div>
+<div class="allocation-body">
+<div class="allocation-donut-panel"><div class="allocation-donut" id="allocation-donut"></div><p><strong>Your CCBT allocation</strong><br/> Slices are shares of your balance, not token counts or market usage.</p><div class="allocation-donut-actions"><label class="sr-only" for="allocation-all-model">Model for the entire allocation</label><select id="allocation-all-model"></select><button id="allocation-all-button" type="button">Allocate 100%</button></div><p class="allocation-preset-note" id="allocation-preset-note"></p></div>
+<div class="allocation-sliders"><div class="allocation-row-heading"><span>Model at consumption</span><span>Your CCBT share</span><span>Model tokens</span></div><div id="allocation-model-rows"></div><p class="allocation-slider-note">Move a slider or enter a percentage. Other slices rebalance proportionally so the basket always totals 100%. Selecting a pie slice highlights its conversion.</p></div>
+</div>
+<div class="allocation-conversion"><div><span class="micro-label">Follow one conversion</span><h3 id="allocation-conversion-title"></h3><p class="allocation-conversion-equation" id="allocation-conversion-equation"></p><p id="allocation-conversion-note"></p></div><div class="allocation-total"><span class="micro-label">Sum of model-token counts</span><strong id="allocation-total-tokens"></strong><p>Native tokens—not a measure of equivalent work, intelligence, or output quality.</p></div></div>
+<details class="time-data-details allocation-rules"><summary>Conversion rules and what this example assumes</summary><div class="allocation-rules-grid"><div><h4>Purchase and consumption are separate.</h4><p>All quantities are measured in millions. With purchase-date reference P₀ and budget B: N = B ÷ P₀. At consumption date T, a model priced at pᵢ,T costs pᵢ,T ÷ Pₜ CCBT per token. An allocation share aᵢ therefore yields N × aᵢ × Pₜ ÷ pᵢ,T million model tokens.</p></div><div><h4>This is not a forward quote.</h4><p>The demo assumes a prepaid, index-linked entitlement, priced at the selected spot reference and carried without fees. It does not model financing, forward premiums, basis, capacity limits, execution, credit, or delivery guarantees. Same-date conversion is ordinary budget allocation.</p></div><div><h4>“Market token mix” is price-aware.</h4><p>To reproduce the market’s token shares wᵢ, CCBT allocation shares must be aᵢ = wᵢ × pᵢ ÷ Pₜ. Simply copying usage percentages into the spending pie would produce a different token mix. The preset uses unrounded values.</p></div><div><h4>Availability and rounding.</h4><p>Only models with positive usage are eligible in this fictional scenario. Presets refresh when dates change; a custom basket keeps surviving allocations and redistributes exited-model shares proportionally. New models start at zero in a custom basket. Calculations use full precision; displayed numbers are rounded. Nothing here places a trade.</p></div></div></details>
+<div class="time-panel-footer"><p>All values belong to the same fictional representative segment. There is no live market connection.</p><button class="text-button jump-link" id="allocation-export" type="button">Export allocation CSV <span aria-hidden="true">↓</span></button></div>
+<p class="sr-only" id="allocation-announcement" role="status"></p>
+</div>
+</div>
+</section>
+<!-- END TIME EXPLORERS -->
+<section class="closing-cta"><div class="shell"><div><p class="eyebrow">From illustration to evidence</p><h2>The model is the standard.<br/> Research measures a market.</h2></div><a class="button" href="research.html">Explore the research <span aria-hidden="true">→</span></a></div></section>
+</main>
+<footer class="site-footer"><div class="shell">
+<div class="footer-top"><a class="brand" href="index.html"><span aria-hidden="true" class="brand-symbol"><i></i><i></i><i></i></span><span>Standard Basis</span></a><p>A common basis for a changing market.</p><a class="footer-top-link" href="#main">Back to top <span aria-hidden="true">↑</span></a></div>
+<div class="footer-bottom"><p>Market infrastructure for AI consumption.<br/><span class="footer-legal">Framework under development. No live marketplace or executable quotes.</span></p><nav aria-label="Footer navigation" class="footer-links"><a href="vision.html">Vision</a><a href="market.html">Market</a><a href="ccbt.html">CCBT</a><a href="benchmark.html">In practice</a><a href="research.html">Research</a><a href="participate.html">Participate</a></nav></div>
+<div class="footer-fine"><span>Concept material only. Not an offer to buy or sell a financial instrument.</span><span>Built on a common basis.</span></div>
+</div></footer>
+</body>
+</html>

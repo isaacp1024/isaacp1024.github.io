@@ -1,0 +1,34 @@
+HISTORICAL UPDATE NOTE. See NARRATIVE-UPDATE.md for current installation.
+
+For the subsequent through-time and allocation additions, read TIME-EXPLORER-UPDATE.md.
+The notes below describe the earlier weighted-area calculator update.
+
+CCBT CALCULATOR UPDATE
+
+The final price has moved to the bottom. Between the existing comparison charts
+and the final price, a new weighted-area diagram shows the calculation:
+
+Model block width = share of usage.
+Model block height = model-token price.
+Model block area = weighted contribution.
+
+The second view keeps each colored area but makes all heights equal to the
+common price. Its widths represent contribution shares, not usage shares.
+
+QUICK TRY
+Open calculator.html in a browser. It is a self-contained copy of the widget.
+
+SITE INTEGRATION
+The complete updated site is included. The actual site changes are in:
+  benchmark.html
+  styles.css
+  site.js
+
+Keep any existing custom site-config.js and publication data when applying the
+update to a customized deployment. The supplied data remains pre-publication.
+
+To regenerate calculator.html after editing the source files:
+  python3 scripts/build_calculator.py
+
+All inputs are fictional. No live feeds, quotes, or benchmark observations were
+added. See README.md and QA.md for details.

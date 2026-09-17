@@ -1,0 +1,309 @@
+/* Standard Basis — concise home, company vision, and explicit navigation.
+   Loaded last. The calculator, time-series, and allocation layouts retain their source styles. */
+
+/* A common treatment for directional navigation, in-page jumps, and small actions. */
+.sb-site .jump-link,
+.sb-site .time-standalone-header nav a{
+ display:inline-flex;align-items:center;justify-content:space-between;gap:20px;
+ min-height:42px;max-width:100%;padding:10px 14px;
+ border:1px solid #a5adae;background:transparent;color:var(--ink);
+ text-decoration:none;font-size:11px;line-height:1.5;font-weight:600;
+ transition:background .18s ease,color .18s ease,border-color .18s ease;
+}
+.sb-site .jump-link>span[aria-hidden],.sb-site .time-standalone-header nav a>span{flex:none;color:inherit}
+.sb-site .jump-link:hover,.sb-site .jump-link:focus-visible,
+.sb-site .time-standalone-header nav a:hover,.sb-site .time-standalone-header nav a:focus-visible{
+ background:#080b0e;border-color:#080b0e;color:#fff;text-decoration:none;
+}
+.sb-site .jump-link:hover>span,.sb-site .jump-link:focus-visible>span{color:inherit}
+.sb-site .dark .jump-link,.sb-site .concept-company .jump-link{color:#f7f6f1;border-color:#68747a}
+.sb-site .dark .jump-link:hover,.sb-site .dark .jump-link:focus-visible,
+.sb-site .concept-company .jump-link:hover,.sb-site .concept-company .jump-link:focus-visible{background:#000;border-color:#a7b0b1;color:#fff}
+.sb-site .market-node.center .jump-link{background:transparent;border-color:#a5adae;color:var(--ink)}
+.sb-site .market-node.center .jump-link:hover,.sb-site .market-node.center .jump-link:focus-visible{background:#080b0e;border-color:#080b0e;color:#fff}
+.sb-site .lab-section-nav>.shell{gap:10px;padding-block:15px}
+.sb-site .lab-section-nav .jump-link{min-height:40px}
+.sb-site .toc .jump-link{display:flex;width:100%;font-size:11px;padding:9px 12px;margin-top:7px}
+.sb-site .toc .jump-link.is-active{background:var(--ink);color:white;border-color:var(--ink)}
+.sb-site .narrative-aside>.jump-link{display:grid;grid-template-columns:20px minmax(0,1fr) 15px;gap:10px;margin-top:10px;padding:15px 13px}
+.sb-site .narrative-aside>.jump-link>strong{color:inherit}
+.sb-site .narrative-aside>.jump-link>span:first-child{color:var(--signal)}
+.sb-site .narrative-aside>.jump-link:hover>span:first-child,.sb-site .narrative-aside>.jump-link:focus-visible>span:first-child{color:var(--signal-light)}
+.sb-site .concept-card>.jump-link{margin-top:auto;align-self:flex-start}
+.sb-site .market-node>.jump-link{align-self:stretch}
+.sb-site .button.secondary:hover,.sb-site .button.secondary:focus-visible{background:#080b0e;border-color:#080b0e;color:white}
+.sb-site .hero-status a.jump-link{min-height:34px;font-size:10px;padding:6px 11px;margin-block:10px}
+.sb-site .text-button.jump-link{font-size:10px;white-space:normal;text-align:left}
+.sb-site .nav-parent{color:var(--signal)}
+.sb-site .practice-paths{border:0;gap:14px}
+.sb-site .practice-paths>.jump-card{padding:24px;border:1px solid #a5adae;transition:background .18s,color .18s}
+.sb-site .practice-paths>.jump-card:hover,.sb-site .practice-paths>.jump-card:focus-visible{background:#080b0e;border-color:#080b0e}
+.sb-site .practice-paths>.jump-card:is(:hover,:focus-visible) :is(strong,span,b,p){color:white}
+
+/* Three ideas, then a compact directory. No long-form applications or form on Home. */
+.slim-home .hero-grid{padding-block:43px 42px;gap:70px}
+.slim-home .hero h1{font-size:clamp(60px,6.6vw,92px);margin-bottom:23px}
+.slim-home .hero .lede{font-size:18px}
+.slim-home .hero-focus{font-size:13px;margin-top:14px}
+.slim-home .hero .actions{margin-top:23px}
+.slim-home .narrative-aside{margin-top:0;padding-top:13px}
+.slim-home .narrative-aside blockquote{font-size:23px;margin-top:24px}
+.slim-home .hero-status .shell{min-height:53px}
+.slim-home .section{padding-block:65px}
+.slim-home .section-heading{margin-bottom:28px}
+.slim-home .section-heading h2{font-size:clamp(36px,3.6vw,52px);margin-bottom:20px}
+.slim-home .section-intro{font-size:15px}
+.slim-home .problem-second{font-size:13px;line-height:1.85;margin-top:13px}
+.slim-home .solution-gap{margin-top:27px}
+.slim-home .gap-heading{padding:20px 26px}
+.slim-home .gap-heading h3{font-size:25px}
+.slim-home .gap-options article{padding:22px 26px}
+.slim-home .gap-options p{font-size:12px;line-height:1.8}
+.slim-home .gap-options h4{font-size:16px;margin-bottom:10px}
+.slim-home .question-frame{margin-top:25px}
+.slim-home .question-frame>.micro-label{font-size:8.5px;margin-bottom:12px}
+.slim-home .question-frame .problem-questions h3{font-size:23px}
+.slim-home .question-frame .problem-questions article{padding-block:20px}
+.slim-home .question-answer{margin-top:18px;gap:20px}
+.slim-home .question-answer p{font-size:12px}
+.slim-home .universal-map{padding:19px}
+.slim-home .universal-map>div{padding:19px 21px}
+.slim-home .universal-map h3{font-size:28px}
+.slim-home .universal-destination h3{font-size:30px}
+.slim-home .generic-tokens{margin-bottom:20px}
+.slim-home .section-bottom{margin-top:22px}
+.slim-home .section-bottom>p{font-size:11px;max-width:800px}
+.slim-home .concept-card{padding:26px 29px}
+.slim-home .concept-card-top{margin-bottom:20px}
+.slim-home .concept-card h3{font-size:43px}
+.slim-home .concept-card .concept-full-name{margin-bottom:18px}
+.slim-home .concept-card>p:not(.concept-full-name){font-size:13px;margin-bottom:22px}
+.slim-home .index-bridge{margin-top:20px;padding:22px 28px;grid-template-columns:270px minmax(0,1fr)}
+.slim-home .index-bridge .micro-label{margin-bottom:8px}
+.slim-home .index-bridge h3{font-size:27px}
+.home-directory{background:var(--soft)}
+.directory-heading{display:flex;justify-content:space-between;align-items:end;gap:50px;margin-bottom:29px}
+.directory-heading .eyebrow{margin-bottom:15px;font-size:10px}
+.directory-heading h2{font-size:42px}
+.directory-heading>p{max-width:420px;font-size:13px;line-height:1.8}
+.explore-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.explore-card{display:flex;flex-direction:column;min-width:0;border:1px solid #aeb9b6;padding:23px 25px;background:#fdfdfa;text-decoration:none;transition:background .18s,color .18s,border-color .18s}
+.explore-label{display:flex;align-items:center;justify-content:space-between;gap:15px;font-size:9px;font-weight:650;letter-spacing:.1em;text-transform:uppercase;color:var(--signal);margin-bottom:20px}
+.explore-label>span:last-child{font-size:19px;font-weight:400;line-height:1}
+.explore-card h3{font-family:var(--serif);font-size:26px;line-height:1.13;font-weight:400;letter-spacing:-.025em;max-width:280px;margin-bottom:13px;color:var(--ink)}
+.explore-card p{font-size:12px;line-height:1.8}
+.explore-card:is(:hover,:focus-visible){background:#080b0e;border-color:#080b0e;color:#fff}
+.explore-card:is(:hover,:focus-visible) :is(h3,p,.explore-label){color:#fff}
+
+/* Vision: company context, participant applications, and a readable path forward. */
+.vision-hero{padding-block:69px 55px}
+.vision-hero h1{font-size:clamp(62px,6.3vw,94px);max-width:980px}
+.vision-hero-bottom{display:flex;justify-content:space-between;align-items:end;gap:60px;margin-top:26px}
+.vision-hero-bottom .lede{max-width:650px;font-size:19px}
+.vision-stage{display:flex;align-items:start;gap:10px;font-size:10px;max-width:235px;line-height:1.7}
+.vision-stage .status-dot{margin-top:6px}
+body[data-page=vision] .section{padding-block:78px}
+body[data-page=vision] .section-heading h2{font-size:clamp(39px,4vw,57px)}
+.company-purpose{display:grid;grid-template-columns:1fr 1fr;gap:60px;margin-left:305px}
+.company-purpose>div{display:flex;flex-direction:column;align-items:start;border-top:1px solid #b0bdb9;padding-top:21px;min-width:0}
+.company-purpose .micro-label{color:var(--signal);font-size:9px;margin-bottom:17px}
+.company-purpose h3{font-family:var(--serif);font-size:28px;line-height:1.2;font-weight:400;margin-bottom:16px;letter-spacing:-.025em}
+.company-purpose p{font-size:13px;line-height:1.9;margin-bottom:20px}
+.company-purpose .jump-link{margin-top:auto}
+.vision-possibilities{background:var(--soft)}
+.vision-audiences{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.vision-audience{padding:32px;border:1px solid #b1beb9;background:#fff;display:flex;flex-direction:column;align-items:start}
+.vision-audience>.micro-label{color:var(--signal);font-size:10px;margin-bottom:23px}
+.vision-audience>h3{font-family:var(--serif);font-size:39px;line-height:1.1;letter-spacing:-.03em;font-weight:400;margin-bottom:26px}
+.vision-benefit{padding:19px 0;border-top:1px solid var(--line);width:100%}
+.vision-benefit h4{font-size:14px;font-weight:600;margin-bottom:10px}
+.vision-benefit p{font-size:13px;line-height:1.85;max-width:470px}
+.vision-audience>.jump-link{margin-top:10px}
+.vision-qualification{font-size:11px;line-height:1.8;margin-top:20px;max-width:1000px}
+.vision-stages{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border:1px solid #b1beb9;background:#fff}
+.vision-stages article{padding:28px;min-width:0}
+.vision-stages article+article{border-left:1px solid var(--line)}
+.vision-stages .micro-label{font-size:9px;color:var(--signal);margin-bottom:25px}
+.vision-stages h3{font-family:var(--serif);font-size:29px;font-weight:400;line-height:1.18;letter-spacing:-.025em;margin-bottom:16px}
+.vision-stages p{font-size:13px;line-height:1.85}
+.vision-path-bottom{display:flex;align-items:center;justify-content:space-between;gap:35px;margin-top:25px}
+.vision-path-bottom p{font-size:12px;line-height:1.85;max-width:770px}
+.vision-path-bottom>.jump-link{flex:none}
+.vision-thinking{background:var(--soft)}
+.vision-reading{display:grid;grid-template-columns:1fr 1fr;gap:80px;border:1px solid #b1beb9;padding:33px;background:#fff;align-items:center}
+.vision-reading .micro-label{color:var(--signal);font-size:9px;margin-bottom:18px}
+.vision-reading h3{font-family:var(--serif);font-size:33px;font-weight:400;line-height:1.15;letter-spacing:-.025em;margin-bottom:14px}
+.vision-reading p{font-size:13px;line-height:1.85;margin-bottom:21px}
+.vision-reading blockquote{font-family:var(--serif);font-size:29px;line-height:1.4;letter-spacing:-.02em;max-width:425px;padding-left:29px;border-left:2px solid var(--signal)}
+.vision-reading blockquote em{font-style:normal;color:var(--signal);display:block;margin-top:9px}
+
+/* Two market compositions, with their own time-specific prices beneath.
+   No balance sits between them: quantities belong to the contract, not the unit price. */
+.market-continuity{border:1px solid #b0bdb9;background:white}
+.continuity-heading{display:flex;justify-content:space-between;align-items:center;gap:25px;padding:18px 28px;border-bottom:1px solid var(--line)}
+.continuity-heading .micro-label{font-size:9px;color:var(--signal)}
+.continuity-pair{display:grid;grid-template-columns:1fr 1fr}
+.continuity-snapshot{min-width:0;padding:28px}
+.continuity-snapshot+.continuity-snapshot{border-left:1px solid var(--line)}
+.snapshot-time{display:flex;align-items:center;justify-content:space-between;gap:15px;margin-bottom:22px}
+.snapshot-time>.micro-label{font-size:9px;color:var(--signal)}
+.snapshot-period{font-size:10px;font-family:var(--mono);color:var(--muted);white-space:nowrap}
+.snapshot-models{font-family:var(--serif);font-size:34px;font-weight:400;line-height:1.17;letter-spacing:-.025em;margin-bottom:24px}
+.snapshot-usage-label{display:block;color:var(--muted);font-size:9px;margin-bottom:10px}
+.continuity-snapshot .future-market-bar{height:30px}
+.continuity-snapshot .future-market-legend{gap:7px 15px;font-size:9px;margin-top:12px;min-height:29px;align-content:start}
+.snapshot-price{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:20px;padding:25px 0 22px;margin-top:22px;border-top:1px solid #afbbb7}
+.snapshot-price .micro-label{color:var(--signal);font-size:10px;margin-bottom:7px}
+.snapshot-price small{font-size:10px;color:var(--muted);line-height:1.7;display:block}
+.snapshot-price strong{font-family:var(--serif);font-size:53px;font-weight:400;line-height:1.1;letter-spacing:-.035em;color:var(--ink)}
+.snapshot-equation{display:flex;align-items:center;gap:10px;justify-content:space-between;padding:13px 16px;background:var(--soft);font-size:11px;line-height:1.65;color:var(--ink)}
+.snapshot-equation>span[aria-hidden]{color:var(--signal);font-size:16px}
+.snapshot-explanation{font-size:12px;line-height:1.85;margin-top:17px;min-height:44px}
+.snapshot-calculation{margin-top:17px}
+.snapshot-calculation summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;border:1px solid #a5adae;padding:9px 12px;min-height:40px;font-size:10px;font-weight:600;color:var(--ink);transition:background .18s,color .18s}
+.snapshot-calculation summary::-webkit-details-marker{display:none}
+.snapshot-calculation summary:after{content:'+';font-size:19px;line-height:1;font-weight:400}
+.snapshot-calculation[open] summary:after{content:'−'}
+.snapshot-calculation summary:hover,.snapshot-calculation summary:focus-visible{color:white;background:#080b0e;border-color:#080b0e}
+.snapshot-calculation table{width:100%;border-collapse:collapse;font-size:10px;line-height:1.6;margin-top:12px;color:var(--ink)}
+.snapshot-calculation th{color:var(--muted);font-weight:500;font-size:9px}
+.snapshot-calculation th,.snapshot-calculation td{padding:9px 4px;text-align:right;border-bottom:1px solid var(--line);font-variant-numeric:tabular-nums}
+.snapshot-calculation th:first-child,.snapshot-calculation td:first-child{text-align:left;padding-left:0}
+.snapshot-calculation td:last-child{font-family:var(--mono)}
+.snapshot-calculation .model-key{margin-right:7px;width:6px;height:6px}
+.snapshot-calculation caption{text-align:left;caption-side:bottom;font-size:9px;color:var(--muted);padding-top:10px;line-height:1.75}
+.continuity-bottom{display:flex;justify-content:space-between;align-items:center;gap:30px;padding:24px 28px;border-top:1px solid var(--line);background:var(--soft)}
+.continuity-bottom h4{font-size:15px;font-weight:600;margin-bottom:6px}
+.continuity-bottom p{font-size:11px;line-height:1.85;max-width:730px}
+.continuity-bottom>.jump-link{flex:none}
+.contract-terms-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:30px;margin-top:30px}
+.contract-terms-grid .micro-label{font-size:9px;color:var(--signal);margin-bottom:12px}
+.contract-terms-grid h3{font-size:17px;margin-bottom:12px}
+.contract-terms-grid p{font-size:12px;line-height:1.85}
+.price-step-hint{display:block;margin-top:5px}
+.participation-destination{padding-top:53px}
+body[data-page=ccbt] .common-basis-section{padding-block:64px}
+body[data-page=ccbt] .article-layout{border-top:1px solid var(--line)}
+
+@media(min-width:1600px){.slim-home .hero-grid{padding-block:58px}.slim-home .hero h1{font-size:102px}}
+@media(max-width:1150px){
+ .slim-home .hero-grid{gap:40px}.slim-home .hero h1{font-size:clamp(60px,6.8vw,80px)}
+ .company-purpose{margin-left:235px;gap:35px}
+ .snapshot-models{font-size:30px}.snapshot-price strong{font-size:46px}
+ .snapshot-price{gap:12px}.continuity-snapshot{padding:25px}
+ .vision-reading{gap:45px}.vision-reading blockquote{font-size:27px}
+ .explore-card{padding:21px}.explore-card h3{font-size:24px}
+ .slim-home .universal-map>div{padding-inline:16px}
+ .slim-home .index-bridge{grid-template-columns:230px minmax(0,1fr)}
+}
+@media(max-width:1024px){
+ .sb-site .nav-links{gap:18px}.sb-site .nav{gap:20px}
+ .company-purpose{margin-left:0;gap:40px}
+ .snapshot-time{align-items:start;flex-direction:column;gap:7px}
+ .vision-stages article{padding:23px}.vision-stages h3{font-size:26px}
+ .continuity-bottom{gap:22px}.continuity-bottom>.jump-link{max-width:220px}
+}
+@media(max-width:900px){
+ .slim-home .section-heading h2{font-size:43px}.slim-home .hero h1{font-size:59px}
+ .slim-home .hero-grid{gap:30px}.slim-home .hero .lede{font-size:16px}
+ .slim-home .narrative-aside blockquote{font-size:21px}
+ .sb-site .narrative-aside>.jump-link{padding:13px 10px;gap:7px;font-size:10px}
+ .slim-home .concept-card h3{font-size:36px}.slim-home .concept-card{padding:24px}
+ .directory-heading{gap:35px}.directory-heading h2{font-size:35px}
+ .directory-heading>p{max-width:330px;font-size:12px}
+ .explore-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .vision-hero-bottom{gap:35px}.vision-hero-bottom .lede{font-size:17px}
+ .vision-audience{padding:25px}.vision-audience>h3{font-size:35px}
+ .snapshot-price{display:block}.snapshot-price strong{display:block;margin-top:15px;font-size:53px}
+ .snapshot-equation{font-size:10px;gap:8px}
+ .vision-stages p{font-size:12px}.vision-stages .micro-label{font-size:8px}
+}
+@media(max-width:760px){
+ .slim-home .hero-grid{padding-block:38px;gap:30px}
+ .slim-home .hero h1{font-size:clamp(53px,10.5vw,74px)}
+ .slim-home .hero .lede{font-size:17px}.slim-home .hero-focus{font-size:13px}
+ .slim-home .hero-aside{margin-top:0;padding-top:17px}
+ .slim-home .narrative-aside blockquote{display:none}
+ .sb-site .narrative-aside>.jump-link{padding:13px 15px;margin-top:8px}
+ .slim-home .section{padding-block:48px}
+ .slim-home .section-heading h2{font-size:clamp(34px,6.8vw,43px)}
+ .slim-home .section-heading{gap:23px;margin-bottom:27px}
+ .slim-home .section-intro{font-size:15px}.slim-home .problem-second{font-size:13px}
+ .slim-home .gap-heading{padding:22px}.slim-home .gap-heading h3{font-size:26px}
+ .slim-home .gap-options article{padding:20px 22px}
+ .slim-home .question-frame .problem-questions h3{font-size:24px}
+ .slim-home .question-answer{align-items:start;flex-direction:column;gap:15px}
+ .slim-home .universal-map{padding:19px}.slim-home .universal-map>div{padding:20px}
+ .slim-home .universal-map h3{font-size:29px}
+ .slim-home .section-bottom>.jump-link{margin-top:7px}
+ .slim-home .concept-card{padding:25px}.slim-home .concept-card h3{font-size:39px}
+ .slim-home .index-bridge{grid-template-columns:1fr;gap:18px;padding:23px}
+ .directory-heading{display:block;margin-bottom:24px}.directory-heading>p{margin-top:17px;max-width:500px}
+ .directory-heading h2{font-size:37px}.explore-card{padding:24px}.explore-card h3{font-size:26px}
+ .sb-site .lab-section-nav>.shell{gap:8px;padding-block:13px}
+ .sb-site .lab-section-nav .jump-link{font-size:10px;min-height:40px;padding:9px 12px}
+ .sb-site .toc .jump-link{min-height:40px}
+ .sb-site .practice-paths{gap:12px}
+ .vision-hero{padding-block:43px}.vision-hero h1{font-size:clamp(52px,9.5vw,70px)}
+ .vision-hero-bottom{display:block;margin-top:23px}.vision-stage{margin-top:23px;max-width:none}
+ body[data-page=vision] .section{padding-block:53px}
+ body[data-page=vision] .section-heading h2{font-size:clamp(36px,7vw,46px)}
+ .company-purpose{gap:30px}.company-purpose h3{font-size:26px}
+ .vision-audiences{grid-template-columns:1fr;gap:20px}.vision-audience{padding:27px}
+ .vision-audience>h3{font-size:36px}.vision-benefit p{font-size:13px}
+ .vision-stages{grid-template-columns:1fr}.vision-stages article{padding:27px}
+ .vision-stages article+article{border-left:0;border-top:1px solid var(--line)}
+ .vision-stages .micro-label{font-size:9px;margin-bottom:18px}.vision-stages h3{font-size:30px}.vision-stages p{font-size:13px}
+ .vision-path-bottom{display:block}.vision-path-bottom>.jump-link{margin-top:20px}
+ .vision-reading{grid-template-columns:1fr;gap:30px;padding:26px}
+ .vision-reading blockquote{font-size:27px;padding-left:22px}
+ .continuity-heading{align-items:start;flex-direction:column;gap:12px;padding:20px 23px}
+ .continuity-heading .micro-label{font-size:8.5px}
+ .continuity-pair{grid-template-columns:1fr}
+ .continuity-snapshot{padding:25px}
+ .continuity-snapshot+.continuity-snapshot{border-left:0;border-top:1px solid var(--line)}
+ .snapshot-time{flex-direction:row;align-items:center;gap:10px;margin-bottom:20px}
+ .snapshot-period{font-size:9px}
+ .snapshot-models{font-size:32px;margin-bottom:22px}
+ .continuity-snapshot .future-market-legend{min-height:0;gap:8px 16px}
+ .snapshot-price{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:15px;margin-top:23px;padding-block:22px}
+ .snapshot-price strong{margin-top:0;font-size:49px}
+ .snapshot-equation{font-size:11px}
+ .snapshot-explanation{min-height:0;font-size:12px}
+ .continuity-bottom{display:block;padding:23px}
+ .continuity-bottom>.jump-link{margin-top:17px;max-width:100%}
+ .contract-terms-grid{grid-template-columns:1fr;gap:23px}
+ .contract-terms-grid article{padding-bottom:21px;border-bottom:1px solid var(--line)}
+ .participation-destination{padding-top:35px}
+ body[data-page=ccbt] .common-basis-section{padding-block:47px}
+}
+@media(max-width:500px){
+ .slim-home .hero-status .shell{padding-block:10px;gap:8px 18px}
+ .slim-home .hero-status a.jump-link{margin:3px 0 0}
+ .slim-home .hero-status .shell>span:nth-child(2){border-left:0;padding-left:0}
+ .company-purpose{grid-template-columns:1fr;gap:30px}
+ .explore-grid{grid-template-columns:1fr;gap:12px}
+ .explore-card{padding:23px}.explore-label{margin-bottom:17px}.explore-card h3{max-width:100%}
+ .snapshot-time{align-items:start;flex-direction:column;gap:7px}
+ .snapshot-models{font-size:29px}.snapshot-price{gap:12px}
+ .snapshot-price strong{font-size:43px}.snapshot-price .micro-label{font-size:9px}
+ .snapshot-price small{font-size:9px}
+ .snapshot-equation{padding:12px;font-size:10px;gap:7px}
+ .snapshot-calculation th{font-size:8px}.snapshot-calculation td{font-size:9px}
+ .snapshot-calculation .model-key{margin-right:4px}
+ .sb-site .time-standalone-header nav{gap:8px}.sb-site .time-standalone-header nav a{font-size:10px;padding:8px 10px}
+}
+@media(max-width:359px){
+ .slim-home .hero h1{font-size:49px}.slim-home .section-heading h2{font-size:33px}
+ .slim-home .concept-card{padding:21px}.slim-home .concept-card h3{font-size:34px}
+ .continuity-snapshot{padding:21px}.snapshot-price strong{font-size:37px}
+ .snapshot-price small{font-size:8px}.snapshot-equation{flex-wrap:wrap;justify-content:start}
+ .sb-site .jump-link{gap:14px}
+}
+@media(prefers-reduced-motion:reduce){.sb-site .jump-link,.explore-card,.snapshot-calculation summary,.sb-site .jump-card{transition:none}}
+@media print{
+ .market-continuity,.explore-card,.vision-audience{break-inside:avoid}
+ .continuity-pair{grid-template-columns:1fr 1fr}.future-market-bar{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+ .vision-hero,.slim-home .hero-grid{padding-block:25px}
+ .sb-site .jump-link{padding:6px 9px;min-height:0}
+}
